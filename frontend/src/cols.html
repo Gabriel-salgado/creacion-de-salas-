@@ -1,0 +1,56 @@
+<div id="app">
+    <v-app id="inspire">
+        <v-container grid-list-xl text-xs-center>
+            <v-layout row wrap>
+                <v-flex xs12 sm12>
+                    <v-card>
+                        <v-layout row wrap pa-3>
+                            <v-flex xl12 xs12 sm12 md12>
+                                <v-spacer></v-spacer>
+                                <v-btn round color="primary" dark>Select all</v-btn>
+                            </v-flex>
+                            <v-flex xs10 sm6 md4 v-for="i in 6" :key="`4${i}`">
+                                <v-card>
+                                    <div class="check">
+                                        <input type="checkbox" :value="i" class="a" />
+                                        <label for="check"></label>
+
+                                    </div>
+                                    <v-card-text>(xs12 | sm6 | md4)</v-card-text>
+                                </v-card>
+                            </v-flex>
+                            <v-flex xs12 sm6 md3 v-for="i in 4" :key="`4${i}`">
+                                <v-card>
+                                    <div class="center">
+                                        <label class="label">
+                                        <input  class="label__checkbox" type="checkbox" />
+                                        <span class="label__text">
+                                        <span class="label__check">
+                                            <v-icon>account_balance</v-icon>
+                                        </span>
+                                        </span>
+                                    </label>
+                                    </div>
+                                    <v-card-text>(xs12 | sm6 | md4)</v-card-text>
+                                </v-card>
+                            </v-flex>
+                            <v-flex xs12 sm6 md3 v-for="i in 4" :key="`4${i}`">
+                                <v-card>
+                                    <label class="label">
+                                        <input  class="label__checkbox" type="checkbox" />
+                                        <span class="label__text">
+                                        <span class="label__check">
+                                            <v-icon>account_balance</v-icon>
+                                        </span>
+                                        </span>
+                                    </label>
+                                    <v-card-text>(xs12 | sm6 | md4)</v-card-text>
+                                </v-card>
+                            </v-flex>
+                        </v-layout>
+                    </v-card>
+                </v-flex>
+            </v-layout>
+        </v-container>
+    </v-app>
+</div>
